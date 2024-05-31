@@ -25,25 +25,45 @@
 
         <section class="secao-produtos">
             <h2>Confira alguns de nossos produtos:</h2>
-            <div class="produtos">
-                <div><img src="" alt="Imagem 1"></div>
-                <div><img src="" alt="Imagem 2"></div>
-                <div><img src="" alt="Imagem 3"></div>
-                <div><img src="" alt="Imagem 4"></div>
-                <div><img src="" alt="Imagem 5"></div>
-                <div><img src="" alt="Imagem 6"></div>
+            <div class="produtos" id="produtos">
+                <div>
+                    <img src="" alt="Imagem 1">
+                    <p>Nome da Roupa:</p>
+                    <p>Tamanho:</p>
+                    <p>Descrição:</p>
+                    <p>Valor:</p>
+                </div>
+
+                <div>
+                    <img src="" alt="Imagem 2">
+                    <p>Nome da Roupa:</p>
+                    <p>Tamanho:</p>
+                    <p>Descrição:</p>
+                    <p>Valor:</p>
+                </div>
+
+                <div>
+                    <img src="" alt="Imagem 3">
+                    <p>Nome da Roupa:</p>
+                    <p>Tamanho:</p>
+                    <p>Descrição:</p>
+                    <p>Valor:</p>
+                </div>
             </div>
         </section>
 
         <section class="secao-addprodutos">
             <h2>Adicione novas roupas para a lista!</h2>
             <form class="form-addprodutos">
+                <label for="inome">Nome da Roupa:</label>
+                <input type="text" name="nome" id="inome">
                 <label for="itamanho">Tamanho:</label>
                 <input type="text" name="tamanho" id="itamanho">
                 <label for="idesc">Descrição:</label>
                 <input type="text" name="descricao" id="idesc">
                 <label for="ivalor">Valor:</label>
                 <input type="text" name="valor" id="ivalor">
+                <input type="button" value="Adicionar" id="adicionar" onclick="adicionarProduto()">
             </form>
         </section>
 
