@@ -11,75 +11,83 @@
         <div class="cabecalho">
             <img src="img/logo.png" alt="Logo Loja">
             <ul>
-                <li>Home</li>
-                <li>Produtos</li>
-                <li>Contato</li>
+                <div class="menu-items">
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#secao-produtos"><li>Produtos</li></a>
+                    <a href="#contato"><li>Contato</li></a>
+                </div>
             </ul>
         </div>
     </header>
+
     <main>
-        <section class="home">
-            <h1>Loja Virtual</h1>
-            <p>Confira o melhor da moda infantil feminina em um só lugar!</p>
+        <section class="home" id="home">
+            <div class="home-items">
+                <h1>BEM-VINDO!</h1>
+                <p>Confira o melhor da moda infantil feminina em um só lugar!</p>
+            </div>
         </section>
 
-        <section class="secao-produtos">
+        <section class="secao-produtos" id="secao-produtos">
             <h2>Confira alguns de nossos produtos:</h2>
             <div class="produtos" id="produtos">
-                <div>
-                    <img src="" alt="Imagem 1">
-                    <p>Nome da Roupa:</p>
-                    <p>Tamanho:</p>
-                    <p>Descrição:</p>
-                    <p>Valor:</p>
+                <div class="container-imagem">
+                    <img src="img/imagem.jpg" alt="Foto do Produto" class="config-imagem">
+                    <p>Nome da Roupa: Conjunto</p>
+                    <p>Tamanho: P</p>
+                    <p>Descrição: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Valor: R$0,00</p>
                 </div>
 
-                <div>
-                    <img src="" alt="Imagem 2">
-                    <p>Nome da Roupa:</p>
-                    <p>Tamanho:</p>
-                    <p>Descrição:</p>
-                    <p>Valor:</p>
+                <div class="container-imagem">
+                    <img src="img/imagem.jpg" alt="Foto do Produto" class="config-imagem">
+                    <p>Nome da Roupa: Conjunto</p>
+                    <p>Tamanho: P</p>
+                    <p>Descrição: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Valor: R$0,00</p>
                 </div>
 
-                <div>
-                    <img src="" alt="Imagem 3">
-                    <p>Nome da Roupa:</p>
-                    <p>Tamanho:</p>
-                    <p>Descrição:</p>
-                    <p>Valor:</p>
+                <div class="container-imagem">
+                    <img src="img/imagem.jpg" alt="Foto do Produto" class="config-imagem">
+                    <p>Nome da Roupa: Conjunto</p>
+                    <p>Tamanho: P</p>
+                    <p>Descrição: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Valor: R$0,00</p>
                 </div>
             </div>
         </section>
 
         <section class="secao-addprodutos">
-            <h2>Adicione novas roupas para a lista!</h2>
-            <form class="form-addprodutos">
-                <label for="inome">Nome da Roupa:</label>
-                <input type="text" name="nome" id="inome">
-                <label for="itamanho">Tamanho:</label>
-                <input type="text" name="tamanho" id="itamanho">
-                <label for="idesc">Descrição:</label>
-                <input type="text" name="descricao" id="idesc">
-                <label for="ivalor">Valor:</label>
-                <input type="text" name="valor" id="ivalor">
-                <input type="button" value="Adicionar" id="adicionar" onclick="adicionarProduto()">
-            </form>
+            <div class="container-addprodutos">
+                <h2>Adicione novas roupas para a lista!</h2>
+                <form class="form-addprodutos">
+                    <label for="inome">Nome da Roupa:</label>
+                    <input type="text" name="nome" id="inome">
+                    <label for="itamanho">Tamanho:</label>
+                    <input type="text" name="tamanho" id="itamanho">
+                    <label for="idesc">Descrição:</label>
+                    <input type="text" name="descricao" id="idesc">
+                    <label for="ivalor">Valor:</label>
+                    <input type="text" name="valor" id="ivalor">
+                    <input type="button" value="Adicionar" id="adicionar" onclick="adicionarProduto()">
+                </form>
+            </div>
         </section>
 
-        <section class="contato">
+        <section class="contato" id="contato">
             <h2>Contate-nos!</h2>
             <div class="container-contatos">
-                <div><img src="" alt="Logo do WhatsApp"></div>
-                <div><img src="" alt="Logo do Instagram"></div>
-                <div><img src="" alt="Logo do X"></div>
-                <div><img src="" alt="Logo do TikTok"></div>
+                <a href="#"><div><img src="img/whatsapp.png" alt="Logo do WhatsApp"></div></a>
+                <a href="#"><div><img src="img/instagram.png" alt="Logo do Instagram"></div></a>
+                <a href="#"><div><img src="img/tiktok.png" alt="Logo do TikTok"></div></a>
             </div>
         </section>
     </main>
+
     <footer>
         <p>® DESENVOLVIDO POR <strong><a href="https://emanuelrf7.github.io/portfolio/" rel="external" target="_blank">EMANUEL ROSA FRANCO</a></p>
     </footer>
+
     <script src="script.js"></script>    
 </body>
 </html>

@@ -14,6 +14,191 @@
     --cor-02: #EDBFBF;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--cor-02);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    font-size: 1.5em;
+}
+
+.cabecalho img {
+    width: 250px;
+    height: 250px;
+}
+
+.menu-items {
+    list-style: none;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.890);
+}
+
+.menu-items li::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: var(--cor-01);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.menu-items li:hover::after {
+    width: 100%;
+}
+
+.menu-items li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    background-image: url('img/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.250) inset;
+}
+
+.home-items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 280px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.890);
+}
+
+.home-items h1 {
+    font-size: 2.5em;
+}
+
+.home-items p {
+    font-size: 1em;
+}
+
+.secao-produtos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.secao-produtos h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.890);
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.container-imagem {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container-imagem p {
+    margin-bottom: 10px;
+}
+
+.config-imagem {
+    width: 250px;
+}
+
+.secao-addprodutos {
+    height: 100vh;
+    position: relative;
+    background-color: white;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.250) inset;
+}
+
+.container-addprodutos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-addprodutos h2 {
+    color: var(--cor-01);
+    margin-bottom: 30px;
+}
+
+.container-addprodutos input {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#adicionar {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.contato {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.890);
+}
+
+.contato img {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;    
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: #540B0E;
+    transition: 0.2s;
 }

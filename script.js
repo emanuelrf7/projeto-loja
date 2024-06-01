@@ -24,11 +24,23 @@ function adicionarProduto() {
     textoTamanho.innerText = `Tamanho: ${tamanho}`;
     textoDescricao.innerText = `Descricao: ${descricao}`;
     textoValor.innerText = `Valor: R$${valor}`;
-    img.src = prompt('Digite o link da imagem: ');
+
+    let imgSrc = prompt('Digite o link da imagem do produto:').trim();
+    
+    if (imgSrc) {
+        img.src = imgSrc;
+    } else {
+        do {
+            imgSrc = prompt('É necessário o link da imagem do produto! Tente novamente:')
+        } while(!imgSrc)
+        img.src = imgSrc;
+    }
+
     img.alt = 'Foto do Produto';
+    img.classList = 'config-imagem'
+    novoEl.classList = 'container-imagem'
     novoEl.append(img, textoNome, textoTamanho, textoDescricao, textoValor);
     produtos.appendChild(novoEl);
-    console.log(novoEl);
     
     // Reset do formulário
     nomeEl.value = '';
