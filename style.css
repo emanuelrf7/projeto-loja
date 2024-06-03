@@ -131,9 +131,10 @@ body {
 
 .container-imagem p {
     margin-bottom: 10px;
+    text-align: center;
 }
 
-.config-imagem {
+.container-imagem img {
     width: 250px;
 }
 
